@@ -1,5 +1,4 @@
 # AtiperaRekru
-A project which (hopefully) will land me this job
 
 # Usage Instructions
 1. Clone the repository to your local machine.
@@ -17,16 +16,18 @@ A project which (hopefully) will land me this job
 1. Open the project in IntelliJ IDEA.
 2. Run the application by executing the main application file.
 
-# Examples of Usage
-## Endpoint 1: Retrieving repositories data by a GitHub username
-- URL: /api/user/adamNowakowskii/repository
-- Method: GET
-- Path Parameters:
-  - username - GitHub username
-- Success Response:
-  - Code: 200
-  - Content: list of user repositories
-
+## Examples of Usage
+### Endpoint 1: Retrieving repositories data by a GitHub username
+- **URL:** `/api/user/{username}/repositories`
+- **Method:** GET
+- **Path Parameters:**
+    - `username` - GitHub username
+- **Query Parameters:**
+    - `type` - Membership type
+    - `pagePagination` - Pagination details
+- **Success Response:**
+    - **Code:** 200
+    - **Content:** List of user repositories
 # Author
 Adam Nowakowski
 
